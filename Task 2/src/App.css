@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background:rgb(181,101,167);
+
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  background: rgb(152,180,212);
+  padding: 2.5rem;
+}
+
+nav a{
+  margin: 0 0.5em;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Finlandica', sans-serif;
+  color:black;
+  border-radius: 5px;
+  display: block;
+
+}
+nav a:hover{
+  color:black;
+  background-color: white;
+}
+
+nav h3{
+  display: block;
+  font-size: 30px;
+  font-family:fantasy;
+  color:rgb(203, 50, 177);
+  
+}
+
+
+.users__btn{
+  font-size: 1rem;
+  padding: 0.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  float: right;
+  right: 0;
+  margin: 0.5rem;
+  background: #7adf8e
+}
+
+.users__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.user__card{
+  width: 20rem;
+  border-radius: 0.5rem;
+  background-color: #c5e9ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+
+.user__card img{
+  border-radius: 1px;
+}
+
+.user__card p{
+  padding: 5px;
+  font-size: large;
+  font-family:monospace;
+  color:rgb(65, 18, 205);
+}
+
+.loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem  ;
+}
+
+@media only screen and (max-width: 380px) {
+  nav {
+    flex-direction: column;
+  }
+  .users__btn{
+    float: none;
+  }
+  .btn{
+    text-align: center;
+  }
+}
